@@ -7,3 +7,13 @@
 - `testdb` - Database.
 - `sa` - User
 - `password` - Password.
+
+## use below config in application.properties file:
+server.port=8081
+spring.h2.console.enabled=true
+spring.datasource.platform=h2
+spring.datasource.url=jdbc:h2:mem:testdb
+inputfile=classpath:users.csv
+
+## This dosent work after spring 2.2
+sprint.batch.job.enabled=false
